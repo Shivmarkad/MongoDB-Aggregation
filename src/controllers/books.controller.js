@@ -19,3 +19,17 @@ export const getBooks = async (req, res, next) => {
     next(error);
   }
 };
+
+export const getDiscBooks = async (req, res, next) => {
+  try {
+    const data = await BookService.getDiscBooks();
+    res.status(HttpStatus.OK).json({
+      code: HttpStatus.OK,
+      data: data,
+      message: 'Discounted books fetched successfully'
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
