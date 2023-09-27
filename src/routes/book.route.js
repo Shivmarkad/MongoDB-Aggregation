@@ -1,13 +1,13 @@
 import express from 'express';
-import * as userController from '../controllers/books.controller';
+import * as bookController from '../controllers/books.controller';
 
 const router = express.Router();
 
 //route to get all books
-router.get('', userController.getBooks);
+router.get('', bookController.getBooks);
 
 //route to get all with discounted
-router.get('/disc', userController.getDiscBooks);
+router.get('/disc', bookController.getDiscBooks);
 
 
 export default router;
