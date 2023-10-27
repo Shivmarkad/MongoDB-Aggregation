@@ -1,1 +1,1 @@
-**Implementation of MongoDB Aggregation Pipeline**
+**MongoDB Aggregation Pipeline**
